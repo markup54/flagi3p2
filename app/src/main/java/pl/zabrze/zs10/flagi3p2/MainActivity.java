@@ -18,14 +18,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void zlaOdpowiedz(View view) {
-        Toast.makeText(this, "Ten kolor jest we fladze Polski", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, R.string.info, Toast.LENGTH_SHORT).show();
     }
 
     public void dobraOdpowiedz(View view) {
         view.setVisibility(View.INVISIBLE);
         licznik++;
         if(licznik ==4){
-            textViewPolecenie.setText("Brawo to jest flaga Polski");
+            textViewPolecenie.setText(R.string.podsumowanie); //odwołanie do zasobów w pliku values/strings.xml
         }
     }
 }
